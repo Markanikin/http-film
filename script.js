@@ -7,7 +7,7 @@ const API_KEY = "9e8f1a2";
         return;
       }
 
-      const url = `https://www.omdbapi.com/?apikey=9e8f1a2&t=${encodeURIComponent(movieTitle)}`;
+      const url = `https://www.omdbapi.com/?apikey=${API_KEY}&t=${encodeURIComponent(movieTitle)}`;
 
       fetch(url)
         .then(response => response.json())
